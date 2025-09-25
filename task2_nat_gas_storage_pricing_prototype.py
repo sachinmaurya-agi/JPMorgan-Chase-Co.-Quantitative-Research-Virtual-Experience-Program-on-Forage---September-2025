@@ -144,8 +144,7 @@ def price_storage_contract(injection_schedule, withdrawal_schedule,
 
         last_date = cur_date
 
-    # No further storage cost after last event assumed (if you want to charge until a settlement date provide that date as a dummy event)
-    net_value = total_cashflow - total_storage_cost
+    # No further storage cost after last event assumed.
 
     return {'total_cashflow': float(total_cashflow),
             'total_storage_cost': float(total_storage_cost),
